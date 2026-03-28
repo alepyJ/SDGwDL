@@ -1,4 +1,2 @@
-# TFG Project
-
-Pipeline base para experimentos de datos sintéticos tabulares sobre datasets UCI.
-
+# SDGwDL
+Repository for Synthetic Data Generation with Deep Learning playbook
