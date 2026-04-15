@@ -1,0 +1,15 @@
+services:
+  tfg:
+    build: .
+    image: tfg-synth-data:latest
+    volumes:
+      - ./results:/app/results
+    command: ["configs/adult.yaml", "--output-dir", "results/experiments"]
+
+  tfg-all:
+    build: .
+    image: tfg-synth-data:latest
+    entrypoint: ["/bin/bash", "/app/run_all_experiments.sh"]
+    command: ["/app/results/experiments_batch"]
+    volumes:
+      - ./results:/app/results

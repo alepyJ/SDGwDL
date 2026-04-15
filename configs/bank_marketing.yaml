@@ -1,0 +1,12 @@
+dataset: bank_marketing
+seed: 42
+test_size: 0.2
+synthetic_size: train
+models:
+  - ctgan
+  - tvae
+epochs: 20
+target: y
+id_columns: []
+rare_threshold: 0.01
+nn_sample_size: 3000
